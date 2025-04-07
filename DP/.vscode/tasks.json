@@ -1,0 +1,63 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Python Script with I/O",
+            "type": "shell",
+            "command": "python run_script.py \"${file}\"",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "detail": "Run the specified Python script with input from input.txt and output to output.txt"
+        }
+    ]
+}
+
+// {
+//     "version": "2.0.0",
+//     "tasks": [
+//         {
+//             "label": "Compile and run",
+//             "type": "shell",
+//             "command": "",
+//             "args": [
+//                 "python3",
+//                 "${relativeFile}",
+//                 "<",
+//                 "input.txt",
+//                 ">",
+//                 "output.txt"
+//             ],
+//             "presentation": {
+//                 "reveal": "never"
+//             },
+//             "group": {
+//                 "kind": "build",
+//                 "isDefault": true
+//             },
+//             "problemMatcher": {
+//                 "owner": "py",
+//                 "fileLocation": [
+//                     "relative",
+//                     "${workspaceRoot}"
+//                 ],
+//                 "pattern": {
+//                     "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+//                     "file": 1,
+//                     "line": 2,
+//                     "column": 3,
+//                     "severity": 4,
+//                     "message": 5
+//                 }
+//             }
+//         }
+//     ]
+// }
