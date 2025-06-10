@@ -26,8 +26,7 @@ class Solution:
 
         # final: dp[n-1][0]
         
-        def vote(a,b,c):
-            return a+b+c>=2
+        vote = lambda a,b,c:a+b+c>=2
 
         for i in range(n):
             if(i>=2):
